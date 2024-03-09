@@ -7357,7 +7357,15 @@ hum.JumpPower = 50
 hum.Jump = true
 swait()
 hum.JumpPower = 0
+-- Makes jump work on serverside, this will work on most sbs as they have the owner variable
+-- Added by Liriosha
+pcall(function()
+	root:SetNetworkOwner(nil)
+end)
 root.Velocity = vt(0,250,0) + root.CFrame.lookVector*250
+pcall(function()
+	root:SetNetworkOwner(owner)
+end)
 sphere2(5,"Add",root.CFrame*CFrame.Angles(math.rad(-45),0,0),vt(25,1,25),0.3,5,0.3,BrickColor.new("Royal purple"),BrickColor.new("Royal purple").Color)
 sphere2(5,"Add",root.CFrame*CFrame.Angles(math.rad(-45),0,0),vt(25,1,25),0.2,4,0.2,BrickColor.new("Cyan"),BrickColor.new("Cyan").Color)
 for i = 0, 49 do
