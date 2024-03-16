@@ -1,3 +1,9 @@
+--[[Magic Unknown, By KillerDarkness0105/Codex#6685.]]--
+
+
+
+
+
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character
 PlayerGui=Player.PlayerGui
