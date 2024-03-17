@@ -1,7 +1,6 @@
 warn'Star Glitcher Loaded.'
 warn'normally if a mode have a form then press M for transform only if a mode have another form'
 warn'Combo adad is CATASTROPHE [which is a form for calamity]'
-warn'chaosbegone is now on every mode/form double tap w to do chaosbegone on every mode/form (this is a masskill)'
 warn'press L to toggle mode tag'
 print("Attacks are Click,Z,X,C only sometimes JUST PRESS THEM ALL!")
 print([[CONTROLS
@@ -5484,9 +5483,9 @@ mouse.KeyDown:connect(function(k)
 		if(input == "wsws" and not AllowCata)then
 			AllowCata = true
 			warn("You unlocked CATASTROPHE.")
-		elseif(input == 'ww' and not attack)then
-			ChaosBegone()
-		end
+		--elseif(input == 'ww' and not attack)then
+		--	ChaosBegone()
+		--end
 	end	
 end)
 
