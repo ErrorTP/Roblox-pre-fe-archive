@@ -3875,6 +3875,7 @@ function UniversalCollapse()
 	attack = false
 end
 function ChaosBegone()
+	--[[
 	attack = true
 	local speedearn = 0
 	CFuncs["Sound"].Create("rbxassetid://1208650519", char, 10, 0.75)
@@ -3918,6 +3919,7 @@ function ChaosBegone()
 		LW.C0=clerp(LW.C0,cf(-1.5,0.5,0)*angles(math.rad(-50),math.rad(0),math.rad(-30)),.4)
 	end
 	attack = false
+]]
 end
 
 function orb_spawn_norm(positted,timer,color,MagniBoost,min,max,volEx,ShakePower,volSummon)
@@ -5483,10 +5485,9 @@ mouse.KeyDown:connect(function(k)
 		if(input == "wsws" and not AllowCata)then
 			AllowCata = true
 			warn("You unlocked CATASTROPHE.")
+		elseif(input == 'ww' and not attack)then
+			ChaosBegone()
 		end
-		--elseif(input == 'ww' and not attack)then
-		--	ChaosBegone()
-		--end
 	end	
 end)
 
