@@ -5483,6 +5483,7 @@ mouse.KeyDown:connect(function(k)
 		if(input == "wsws" and not AllowCata)then
 			AllowCata = true
 			warn("You unlocked CATASTROPHE.")
+		end
 		--elseif(input == 'ww' and not attack)then
 		--	ChaosBegone()
 		--end
