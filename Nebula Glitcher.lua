@@ -1,6 +1,7 @@
 warn'Star Glitcher Loaded.'
 warn'normally if a mode have a form then press M for transform only if a mode have another form'
 warn'Combo adad is CATASTROPHE [which is a form for calamity]'
+warn'chaosbegone is now on every mode/form double tap w to do chaosbegone on every mode/form (this is a masskill)'
 warn'press L to toggle mode tag'
 print("Attacks are Click,Z,X,C only sometimes JUST PRESS THEM ALL!")
 print([[CONTROLS
@@ -3875,7 +3876,6 @@ function UniversalCollapse()
 	attack = false
 end
 function ChaosBegone()
-	--[[
 	attack = true
 	local speedearn = 0
 	CFuncs["Sound"].Create("rbxassetid://1208650519", char, 10, 0.75)
@@ -3919,7 +3919,6 @@ function ChaosBegone()
 		LW.C0=clerp(LW.C0,cf(-1.5,0.5,0)*angles(math.rad(-50),math.rad(0),math.rad(-30)),.4)
 	end
 	attack = false
-]]
 end
 
 function orb_spawn_norm(positted,timer,color,MagniBoost,min,max,volEx,ShakePower,volSummon)
