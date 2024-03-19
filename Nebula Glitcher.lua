@@ -5925,7 +5925,7 @@ mouse.KeyDown:connect(function(k)
 		resetmode()
 	end
 	if k == "m" and attack == false and ModeOfGlitch == 1000000 and ModeOfGlitch ~= 12345678987654321 and (plr.Name == 'Noobygames12' or plr.UserId == 5719877 or AllowCata) then
-		newThemeCust("rbxassetid://1504604335",0,1,1)
+		newThemeCust("rbxassetid://12607556187",0,1,1)
 		attack = true
 		hum.WalkSpeed = 0
 		MAINRUINCOLOR = BrickColor.new("Royal purple")
